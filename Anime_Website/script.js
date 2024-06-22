@@ -164,7 +164,7 @@ console.log(sliders[currentIndex])
 function prevSlide() 
 {
     currentIndex = (currentIndex === 0) ? sliders.length - 1 : currentIndex - 1;
-    initSlider()
+    initSlider();
     
 }
 

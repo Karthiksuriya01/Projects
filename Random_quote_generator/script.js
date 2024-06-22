@@ -18,6 +18,7 @@ const img = document.createElement("img");
 img.classList.add("images");
 img.style.width = "650px";
 img.style.height = "650px";
+img.style.borderRadius = "8px";
 
 
 
