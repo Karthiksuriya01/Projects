@@ -1,5 +1,6 @@
 const button = document.getElementById("btn");
 
+
 const animeQuotes = [
     {
         animeName : "Naruto",
@@ -28,7 +29,4 @@ function hello()
     // let random = Math.floor(Math.random() *5);
     
     img.src = `${animeQuotes[Math.floor(Math.random() *2)].image[Math.floor(Math.random() *5)]}`; 
-    
-
-
 }
