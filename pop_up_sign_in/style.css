@@ -1,0 +1,123 @@
+*
+{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: serif;
+    background-color: aqua;
+
+}
+
+.button
+{
+    position: relative;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+
+.button:hover
+{
+    letter-spacing: 0.1rem;
+}
+
+#newsLetter{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 2000;
+    width: 450px;
+    transition: 0.5s;
+    text-align: center;
+    height: 250px;
+    border-radius: 8px;
+    visibility: hidden;  
+}
+
+#newsLetter.active
+{
+    visibility: visible;
+    top: 50%;
+
+}
+
+#newsLetter h2
+{
+    text-align: center;
+    color: blue;
+    font-size: 24px;
+    margin: 20px 10px;
+}
+
+#newsLetter p
+{
+    position: relative;
+    width: 100%;
+    margin-top:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsLetter .box
+{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+
+
+}
+
+input, button
+{
+    width: 100%;
+    border: 1px solid  black;
+    outline: none;
+    font-size:1rem ;
+    font-family: serif;
+}
+button
+{
+    border: none;
+    width: 150px;
+    letter-spacing: 1.5rem;
+    background-color: aqua;
+    color: black;
+    font-size: larger;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close
+{
+
+    cursor: pointer;
+    position: absolute;
+    z-index: 3000;
+    top:15px;
+    right: 20px;
+
+
+}
